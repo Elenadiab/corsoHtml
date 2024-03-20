@@ -332,13 +332,13 @@ h2 {
 .myLink {
   color: #4aa40e;
   color: #b4f589;
-  color: #4a8eb2;
+  color: #334e5d;
 }
 
 .box, h2 {
   background-color: #87ef42;
   color: rgba(135, 239, 66, 0.5);
-  color: #0ba1f1;
+  color: #0f5981;
   width: 50%;
 }
 @media screen and (min-width: 760px) {
@@ -350,6 +350,17 @@ h2 {
   .box, h2 {
     background-color: blueviolet;
   }
+}
+
+.button-submit {
+  background-color: red;
+  color: #0f5981;
+  padding: 0.5rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+}
+.button-submit a:hover {
+  background-color: #72ec21;
 }
 
 .mainMenu {
@@ -372,5 +383,5 @@ h2 {
   color: #87ef42;
 }
 .mainMenu ul li a.active {
-  color: #0ba1f1;
+  color: #0f5981;
 }/*# sourceMappingURL=style.css.map */

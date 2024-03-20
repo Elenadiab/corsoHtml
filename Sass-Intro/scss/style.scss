@@ -23,6 +23,8 @@ h1,h2,h3 {
 }
 
 
+
+
 p{
     margin-top: $spacer;
 }
@@ -58,6 +60,11 @@ h2{
 }
 
 
+
+.button-submit{
+    @include myButton($primary-color,$secondary-color);
+    
+}
 
 
 

@@ -4,3 +4,26 @@
     background: linear-gradient($from, $to, $direction);
 
 }
+
+//esempio mixin per bottone
+
+@mixin myButton($bg-color,$text-color,$outline:false){
+    background-color: red;
+    color: $text-color;
+
+    padding: $spacer/2 $spacer*1.5;
+
+    border-radius: 10px;
+    text-decoration: none;
+
+    a:hover{
+        background-color: darken($bg-color,7%);
+    }
+
+    @if $outline == true {
+        background-color: transparent;
+        border: 1px solid $bg-color;
+    }
+
+
+}
