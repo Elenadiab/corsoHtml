@@ -1,0 +1,84 @@
+/* <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 300 to 700 */
+
+/* Google Font  */
+.radio-canada {
+  font-family: "Radio Canada", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.fontLogo{
+    font-family: "Sarina", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(255, 255, 255, 0.705);
+    
+}
+
+
+
+/* HERO */
+#hero {
+
+    height: 100vh;
+    /*PER IL BACKGROUND FULL SCREEN CENTRATO: */
+    background-image: url('./img/Playa-Blanca-mob.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-txt{
+    color: rgba(255, 255, 255, 0.745);
+}
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                              MEDIA QUERIES BS                              */
+/* -------------------------------------------------------------------------- */
+
+/* BREAKPOINT SM */
+@media (min-width: 576px) { 
+
+
+}
+
+/*BREAKPOINT MD */
+@media (min-width: 768px) { 
+
+
+}
+
+/* BREAKPOINT LG */
+@media (min-width: 992px) { 
+
+   #hero {
+       background-image: url('./img/Playa-Blanca-desk.jpg');
+}
+
+    .txtMenu{
+    color:rgba(255, 255, 255, 0.705) ;
+
+}
+
+/* BREAKPOINT XL */
+@media (min-width: 1200px) { 
+
+
+}
+
+/* BREAKPOINT XXL */
+@media (min-width: 1400px) { 
+
+
+}
+
+}

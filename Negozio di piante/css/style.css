@@ -1,0 +1,228 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'red hat display', sans-serif;
+
+
+
+}
+
+h1 {
+    font-size: 3rem;
+
+}
+
+a {
+    color: #3f9f18;
+    text-decoration: none;
+}
+
+
+a :visited {
+    color: #3f9f18;
+    text-decoration: none;
+}
+
+
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+.button {
+    background: #506946;
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 15px;
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.mainHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 10rem;
+    padding: 1rem;
+}
+
+.mainMenu ul  {
+    list-style-type: none;
+    display:flex;
+    column-gap: 2rem;  /*spazio tra gli elementi */
+
+}
+
+#hero {
+    background-image: url('../hero.jpg');
+    background-size: cover;
+    /*adattare immagine al contenitore*/
+
+    background-position: center center;
+    /*centrare l'immagine*/
+
+    background-repeat: no-repeat;
+    /*non ripetere l immagine*/
+
+    height: 80vh;
+
+    /*per centrare la scritta applico flexboxé*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       
+
+}
+
+.cta {
+    text-align: center;
+    
+    
+}
+
+
+.cta h1 { 
+    /*regole per tutti gi h1 dentro cta*/
+    font-weight: 300;
+    margin-bottom: -1rem;
+
+} 
+
+.cta p {
+    font-size: 1,5rem;
+    margin-bottom: 3rem;
+}
+
+
+.cta a {
+    color: white;
+}
+
+
+/* ------- SEZIONE SERVIZI --------- */
+
+.servizio{
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    margin-bottom: 3rem;
+    
+}
+
+
+/* mettere lo spazio prima di .servImage ! */
+.servizio:nth-of-type(even) .servImage{
+    order: 1;
+}
+
+
+.servizio:nth-of-type(odd) .servText{
+    text-align: right;
+}
+
+
+#servizi{
+    padding-top: 6rem;
+}
+
+
+
+.servImage{
+    width: 33.33%;
+
+}
+
+.servText{
+    width: 66.66%;
+}
+
+
+/* ------- Sezione Gallery-------------- */
+
+.sectionTitle {
+    font-size: 3rem;
+    font-weight: 300;
+    text-align: center;
+    border-bottom: 1px solid #506946;
+}
+
+
+
+.galleryWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;;
+
+
+}
+
+.galleryItem {
+    width: 25%;
+    /* padding: 1rem; */
+    width: calc((25% - 1rem) + (1rem / 4));
+       /*  Formula: ((100/colonne - gap) + (gap / colonne)) */
+
+    
+}
+
+
+/* --------------- FOOTER ---------------------- */
+
+.mainFooter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.footerSocial{
+    text-align: center;
+   /*  font-size: 1.5rem; */
+   
+}
+
+.footerLegal{
+    text-align: right;
+}
+
+
+
+.footerSection{
+    width: 33.33%;
+}
+
+
+.bi{
+    font-size: 1.5rem;
+}
+
+.cactus svg {
+    width: 3rem;
+    padding-bottom: 1rem;
+}
+
+.cactusSvg{
+    fill: #506946;
+    
+    
+
+
+
+}
+
+
+
+

@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex; /*attiva Flaxbox sull elemento*/
+    
+    
+    /*dispone gli elementi nel main axis*/
+    justify-content: center ;
+
+
+
+}
+
+
+
+
+.box{
+    border:1px solid red;
+    
+
+    
+}
+
+.container-b{
+    background-color: gold;
+    height: 800px;
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+.box-b{
+    border: 1px solid red;
+}
+
+
+.gallery{
+    /* width: 1200px; */
+    display: flex;
+    flex-wrap: wrap;
+     gap: 16px; /*crea uno spazio tra gli elementi interni */
+     justify-content: center;
+}
+
+img {
+    display: block;
+}
+
+
+

@@ -1,0 +1,86 @@
+
+
+
+@import 'fonts';
+
+@import 'normalize';
+
+@import 'variables';
+
+
+
+body{
+    background-color: #282626d8;
+    color: white;
+    // font-family: 'Comic Sans MS', cursive; <- commenti in linea
+    font-family: $font-serif;
+}
+
+h1,h2,h3 {
+    font-family: $font-sans;
+    $secondary-color:rgb(234, 43, 145);
+    color:$secondary-color;
+}
+
+
+p{
+    margin-top: $spacer;
+}
+
+h2{
+    margin-top: $spacer*6;
+    @extend .box;
+}
+
+
+.myLink{
+    color:darken($primary-color, 25%);
+    color: lighten($primary-color, 15%);
+    color: desaturate($secondary-color, 50%);   
+}
+
+.box{
+    background-color: $primary-color;
+    color: transparentize($primary-color, 0.5); //il contrario di trasparentize è opacify 
+    color: $secondary-color;
+
+}
+
+
+
+
+
+
+
+.mainMenu{
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    ul {
+        display: flex;
+        list-style-type: none;
+        gap: 1rem;
+
+        li {
+            background: #3333;
+            padding: 0.25rem 0.5rem;
+            
+            a{
+                color: rgb(241, 157, 49);
+                &:hover {
+                    color: $primary-color;
+                }
+
+                &.active{
+                    color: $secondary-color;
+                }
+
+            }   
+        }
+    }    
+}
+
+
+
+
+
+

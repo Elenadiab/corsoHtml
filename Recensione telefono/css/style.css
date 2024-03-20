@@ -1,0 +1,88 @@
+
+
+body {
+    font-family: urbanist, sans-serif;
+    font-size: 13px;
+}
+
+
+
+
+h4 {
+    font-style:italic;
+    font-size: 14px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+img {
+    margin-bottom: 1rem;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    background-image: url(../immagini/display.jpg);
+    font-size: larger;
+    padding-left: 500px;
+}
+
+
+
+.testata {
+    width: 100%;
+    background-image: url(../immagini/banner.jpg);
+    background-size: cover;
+    height: 70vh;
+    
+}
+
+.container {
+    width: 800;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.foto {
+ float:left;
+ width: 45%;
+    
+}
+
+.clearfix {
+    clear:both;
+}
+
+.marginLeft {
+    margin-left: 700px;
+    margin-right: 100px;
+    margin-top: 40px;
+}
+
+.testoTestata {
+    padding-top: 50vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+    
+}
+
+.schedaTecnica {
+    border: solid 1px;
+    border-radius: 20px;
+    margin-left: 20px;
+    margin-top: 30px;
+    margin-right: 1200px;
+    padding-left: 10px;
+    padding-bottom: 10px;
+    
+}
+
+

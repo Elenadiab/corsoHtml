@@ -1,0 +1,44 @@
+svg {
+    height: 3rem;
+}
+
+
+i {
+    height: 0.7rem;
+    color: #e9ecef;
+    text-decoration: none;
+
+}
+
+.socialLinks a{
+    color:#e9ecef ;
+    text-decoration: none;
+}
+
+/* img {
+    width: 50%;
+} */
+
+.disc{
+    fill:#ffff
+}
+
+
+.type-disc{
+    color: rgb(162, 161, 161);
+}
+
+
+.dischi{
+    font-size: 0.6rem;
+}
+
+.selettore{
+    color: black;
+}
+
+#inputNumber{
+    color: black;
+}
+
+

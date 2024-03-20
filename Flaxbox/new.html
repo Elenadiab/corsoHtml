@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+<!-- <div class="rosso">
+    <div class="blu">Ciao</div>
+    <div class="blu">Ciao</div>
+</div> -->
+
+<!-- <div class="verde">
+    <div class="rosa">Ciao</div>
+    <div class="rosa">Ciao</div>
+    <div class="rosa">Ciao</div>
+    <div class="rosa">Ciao</div>
+    <div class="rosa">Ciao</div>
+    <div class="rosa">Ciao</div>
+    <div class="rosa">Ciao</div>
+    <div class="rosa">Ciao</div>
+</div> -->
+
+
+<div class="viola">
+    <div class="giallo">Figlio 1</div>
+    <div class="giallo">Figlio 2</div>
+    <div class="giallo">Figlio 3</div>
+    <div class="giallo" id="figlio4">Figlio 4</div>
+</div>
+
+
+
+
+<style>
+    .blu{
+        background: blue;
+       
+    }
+
+
+    .rosso{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: red;
+        color: white;
+        height: 100vh;
+    }
+
+
+    .verde{
+        display: flex;
+        flex-wrap: wrap;  /*  vai a capo quando finisci lo spazio */
+        background: rgb(23, 226, 23);
+        height: 100vh;
+    }
+
+    .rosa{
+        background: rgb(158, 45, 138);
+        width: 25%;
+        margin: auto;
+        border: solid 1px white;
+        
+    }
+
+    .viola{
+        display: flex;
+        /* align-items: center; */
+        background: purple;
+        height: 100vh;
+        gap: 1rem;
+
+        flex-direction: column;
+    }
+
+
+    .giallo{
+        background: yellow;
+    }
+
+    #figlio4{
+        order: -1;
+    }
+
+
+</style>
+
+
+</body>
+</html>
