@@ -1,0 +1,6 @@
+@mixin myGradient($from, $to, $direction){
+
+    background: rgb(179,255,248);
+    background: linear-gradient($from, $to, $direction);
+
+}

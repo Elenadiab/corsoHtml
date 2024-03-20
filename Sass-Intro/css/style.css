@@ -312,6 +312,8 @@ body {
   background-color: rgba(40, 38, 38, 0.8470588235);
   color: white;
   font-family: "Times New Roman", Times, serif;
+  background: rgb(179, 255, 248);
+  background: linear-gradient(red, blueviolet, 0deg);
 }
 
 h1, h2, h3 {
@@ -337,6 +339,17 @@ h2 {
   background-color: #87ef42;
   color: rgba(135, 239, 66, 0.5);
   color: #0ba1f1;
+  width: 50%;
+}
+@media screen and (min-width: 760px) {
+  .box, h2 {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .box, h2 {
+    background-color: blueviolet;
+  }
 }
 
 .mainMenu {

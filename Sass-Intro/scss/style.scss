@@ -1,11 +1,10 @@
-
-
-
 @import 'fonts';
 
 @import 'normalize';
 
 @import 'variables';
+
+@import 'mixins';
 
 
 
@@ -14,6 +13,7 @@ body{
     color: white;
     // font-family: 'Comic Sans MS', cursive; <- commenti in linea
     font-family: $font-serif;
+    @include myGradient(red,blueviolet,0deg);
 }
 
 h1,h2,h3 {
@@ -29,7 +29,7 @@ p{
 
 h2{
     margin-top: $spacer*6;
-    @extend .box;
+    @extend .box; //h2 oltre alle sue proprieta prende  quelle di box
 }
 
 
@@ -43,6 +43,17 @@ h2{
     background-color: $primary-color;
     color: transparentize($primary-color, 0.5); //il contrario di trasparentize è opacify 
     color: $secondary-color;
+
+    width: 50%;
+
+    @media screen and (min-width:760px) {
+        width: 100%;
+        
+    }
+    @media screen and (min-width:1000px){
+        background-color: blueviolet;
+        
+    }
 
 }
 
