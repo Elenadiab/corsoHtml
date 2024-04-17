@@ -1,0 +1,129 @@
+
+
+
+a.button{
+    font-weight: bold;
+    transition: all 2s ease-in-out;
+    
+}
+
+a.button:hover{
+    color: red;
+    background: #999595; ;
+}
+
+
+.container{
+    display: flex;
+    /* overflow-y: hidden;   */
+    /* per nascondere la parte che sporge quando esce dal contenitore */ 
+}
+
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+
+#box-1{
+    
+    background-color: rgb(228, 252, 123);
+    transition: all 0.5s ease-in-out;
+}
+
+#box-1:hover{
+    background-color: fuchsia;
+
+    /* transform: translateX(50px) rotate(90deg); */
+
+    /* transform: scale(0.5); */
+
+    /* transform: skew(10deg, 20deg); */
+    transform: rotate(360deg) scale(1.5) translate(100vh);
+
+ 
+}
+
+.galleryWrapper{
+    display: flex;
+    margin-top: 4rem;
+    gap: 1rem;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.galleryItem{
+    overflow: hidden;
+}
+
+.galleryItem img{
+    transition: all 0.5s ease-in-out ;
+}
+
+.galleryItem:hover img{
+    transform: scale(1.2);
+    filter: brightness(1.75);
+}
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 ANIMAZIONI                                 */
+/* -------------------------------------------------------------------------- */
+
+#box-4{
+    border: 1px solid rgb(2, 9, 147);
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}
+
+.animated{
+    animation-name: ruotami;
+    animation-duration: 4s;
+
+}
+
+body{
+    animation-name:bg-animation ;
+    animation-duration: 10s;
+    animation-iteration-count:infinite ;
+}
+
+
+@keyframes ruotami {
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+@keyframes bg-animation {
+    0%{
+        background-color: rgb(233, 255, 134);
+    }
+
+    25%{
+        background-color: rgb(212, 253, 29);
+    }
+
+    50%{
+        background-color: rgb(42, 242, 7);
+    }
+
+    75%{
+        background-color: aqua;
+    }
+    
+    100%{
+        background-color: rgb(11, 155, 141);
+    }
+    
+}
+

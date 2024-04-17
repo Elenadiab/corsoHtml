@@ -1,0 +1,37 @@
+main{
+    //crea un container
+    @include make-container();
+
+    @include default-max-widths();
+}
+
+.entry-content{
+    @include make-row(); //crea la riga
+}
+
+.art-content{
+    @include make-col-ready(); //inizializza colonna
+
+    @include media-breakpoint-up(md){   //media-query breakpont md (-up è per min-width, per usare max-width mettere -down)
+        @include make-col(9);
+    }
+    @include media-breakpoint-up(lg){   // media-query breakpoint lg
+        @include make-col(8); // dai misura colonna
+
+    }
+
+}
+
+.sidebar{
+    @include make-col-ready(); //inizializzaa colonna
+
+    @include media-breakpoint-up(md){  //media-query breakpont md
+        @include make-col(3);
+    }
+    @include media-breakpoint-up(lg){ // media-query breakpoint lg
+        @include make-col(4); // dai misura colonna
+
+    }
+
+}
+
